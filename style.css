@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+
+:root {
+    --first-color: #FCF8F8;
+    --second-color: #B71010;
+    --third-color: #005C8B;
+    --four-color: #008A00;
+    --five-color: #000000;
+    --six-color: #B64646;
+    --seven-color: #BDE8F4;
+    --eight-color: #EEA1A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow: scroll;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+    height: 100px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.container {
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "navbar navbar"
+        "section2  aside"
+        "section3  aside"
+        "section4  aside";
+
+}
+
+/* nav img {
+    border: 1px solid green;
+    background-image: url(../img/Creolina.jpeg);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: right;
+    height: 60px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+h1{
+    color: white;
+}
+
+
+.container-social {
+    background-color: gray;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+  
+/* .navbar {
+    grid-area: navbar;
+}
+
+.navbar_content {
+    display: grid;
+}
+
+.navbar_content img {
+    width: 30%;
+} */
