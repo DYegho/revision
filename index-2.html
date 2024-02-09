@@ -3,54 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');        
-         :root {
-            --first-color: #FCF8F8;
-            --second-color: #B71010;
-            --third-color: #005C8B;
-            --four-color: #008A00;
-            --five-color: #000000;
-            --six-color: #B64646;
-            --seven-color: #BDE8F4;
-            --eight-color: #EEA1A1;
-        }
-        .container {
-            position: relative;
-        }
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            overflow: scroll;
-        }
-        .page {
-            width: 100%;
-            height: 100vh;
-            gap: 10px;
-
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(5, 1fr);
-            grid-template-areas: "navbar navbar"
-                                 "section2  aside"
-                                 "section3  aside"
-                                 "section4  aside";
-                                 
-        }
-        .navbar {
-            grid-area: navbar;
-        }
-        .navbar_content {
-            display: grid;
-        }
-        .navbar_content img {
-            width: 30%;
-        }
+        
     </style>
 </head>
 <body>
-    <section class="container">
+    <main>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <nav>
+            <!-- agregar el logo y en el css nav: display flex -->
+            <div>
+                <img src="" alt="Image navbar">
+            </div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <section>
+            <section>Cuerpo</section>
+            <aside>
+                texto
+            </aside>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus dicta architecto odio eos optio voluptates laboriosam in, natus praesentium minima, perferendis quidem tempore voluptate fugit doloribus eius dignissimos reprehenderit eveniet!
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>contenido adicional</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="container-social">
+            <a href="#" class="fb"><i class="fa-brands  fa-facebook-f" name="facebook"></i></a>
+            <a href="#" class="lk"><i class="fa-brands  fa-linkedin" name="linkedin"></i></a>
+            <a href="#" class="gb"><i class="fa-brands  fa-github" name="github"></i></a>
+        </div>
+    </footer>
+    <!-- <section class="container">
         <div class="page">
             <div class="navbar">
                 <div class="navbar_content">
@@ -58,6 +60,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 </body>
 </html>
